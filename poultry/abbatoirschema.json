@@ -5,7 +5,7 @@
   },
   "tables": [
     {
-      "url": "ODI_Poultry.csv",
+      "url": "poultry-2016-02-15-2016-02-19.csv",
       "tableSchema": {
         "aboutUrl": "inspections/{HeaderID}",
         "columns": [
