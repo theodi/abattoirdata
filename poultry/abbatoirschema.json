@@ -7,17 +7,18 @@
     {
       "url": "ODI_Poultry.csv",
       "tableSchema": {
+        "aboutUrl": "inspections/{HeaderID}",
         "columns": [
           {
             "name": "HeaderID",
             "titles": "HeaderID",
-            "datatype": "number",
+            "datatype": "integer",
             "required": true
           },
           {
             "name": "AppNo",
             "titles": "AppNo",
-            "datatype": "number",
+            "datatype": "integer",
             "required": true
           },
           {
@@ -73,17 +74,17 @@
           {
             "name": "AnimalsReported",
             "titles": "AnimalsReported",
-            "datatype": "number"
+            "datatype": "integer"
           },
           {
             "name": "AnimalsPresented",
             "titles": "AnimalsPresented",
-            "datatype": "number"
+            "datatype": "integer"
           },
           {
             "name": "AnimalsSlaughtered",
             "titles": "AnimalsSlaughtered",
-            "datatype": "number"
+            "datatype": "integer"
           },
           {
             "name": "Status",
@@ -104,7 +105,7 @@
           {
             "name": "Poultry_NoInHouse",
             "titles": "Poultry_NoInHouse",
-            "datatype": "number"
+            "datatype": "integer"
           },
           {
             "name": "Poultry_ProductionSystem",
@@ -129,7 +130,7 @@
           {
             "name": "Poultry_Age",
             "titles": "Poultry_Age",
-            "datatype": "number"
+            "datatype": "integer"
           },
           {
             "name": "Poultry_HouseMortality",
@@ -161,6 +162,11 @@
           {
             "name": "Comments",
             "titles": "Comments"
+          },
+          {
+            "virtual": true,
+            "propertyUrl": "rdf:type",
+            "valueUrl": "inspections"
           }
         ]
       }
